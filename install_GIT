@@ -1,0 +1,52 @@
+# Disons à partir de /root en root
+apt-get install git-core
+# IDENTITE
+git config --global user.name "raspberrypi"
+git config --global user.email laita@live.fr
+
+# EDITEUR DE TEXTE
+git config --global core.editor vim
+
+# OUTIL DE DIFFERENCES
+git config --global merge.tool vimdiff
+
+# VERIFICATION DES PARAMETRES
+git config --list
+
+# RAPATRIER le projet 
+# git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORIE
+git clone https://github.com/polo29/docker
+# Dossier docker(GIT) créé !!!
+
+# VISUALISER les branches:wq
+git branch
+# donne master
+
+# CREER UNE NOUVELLE BRANCHE
+# git branch NOUVELLE-BRANCHE
+git branch raspi-branch
+git branch
+# donne master
+#       raspi-branch
+# SE POSITIONNER DANS LA BRANCHE
+git checkout raspi-branch
+# DONNE
+# Basculement sur la branche 'raspi-branch'
+
+# On est dans la branche, on modifie README.md
+# Un git status indique que README.md a été modifié
+# et qu' il faut faire un git add 'nom-de-fichier'
+git add README.md
+# git status indique que README.md a été modifié...
+
+# On valide le tout
+git commit -m "modif de REAME.md à partir de la branche raspi-branch sur raspberrypi"
+
+# La on fusionne la branche raspi-branch avec branche master
+git checkout master
+git merge raspi-branch
+
+# On pousse tout sur github
+git push origin master   (demande Username:polo29 et mdp 1F__7)
+
+# OK on va voir ce qui se passe sur github....
