@@ -1,7 +1,0 @@
-A ce niveau, depuis github j'ai créé la branche branch-ajout
-Depuis raspberry je decide de traivailler sur cette branche:
-git checkout branch-ajout
-je créé un fichier..teste-branch et ..je fais à partir
-1) de raspberrypi git add teste-branche, git commit -m "ajout du fichier sur branch-ajout"
-et pour finir git pusch (juste git pusch)
-
